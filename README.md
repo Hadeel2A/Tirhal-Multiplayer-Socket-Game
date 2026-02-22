@@ -1,59 +1,62 @@
-# 🎮 Tirhal – Online Multiplayer Word Game (Java)
+# 🎮 Tirhal – Saudi Wildlife Exploration Game
 
 ## 📌 Project Overview
 
-Tirhal is an online multiplayer word game built using Java.  
-The system follows a client-server architecture where multiple players connect to a central server and compete in real-time to form valid words from a predefined set of letters.
+Tirhal is an interactive multiplayer exploration game inspired by Saudi culture and wildlife.
 
-The game supports concurrent players using multithreading and provides a graphical user interface (GUI) built with Java Swing.
+The player takes the role of a traveler named **Saqqar**, who journeys across different cities in the Kingdom of Saudi Arabia accompanied by his falcon.
+
+In each city, the player discovers native animals through descriptive hints and must guess the correct animal based on those clues.
+
+The game supports multiplayer interaction using a client-server architecture built with Java sockets.
 
 ---
 
 ## 🧠 Game Concept
 
-The server provides a fixed set of letters:
+Saqqar travels from city to city across Saudi Arabia.
 
-Adrsowlmenbrit
+In each level:
+- A description of a local animal appears.
+- The player must guess the animal correctly.
+- The hints describe characteristics such as:
+  - Speed
+  - Habitat
+  - Physical appearance
+  - Behavior
 
-Players must form valid English words using only these letters.
+Example hint:
 
-Example valid words:
-- art
-- bit
-- draw
-- lemon
-- slow
+"أنا صياد، سريع ورشيق، جلدي لونه ذهبي وعليه بقع سوداء، أختفي بين الصخور والشجر. أحب أن أكون لوحدي، وأرصد فريستي أين أعيش؟"
 
-🏆 The first player to correctly guess 5 valid words wins the game.
+Correct answer: Leopard (النمر العربي)
+
+🏆 The fastest player to correctly guess a set number of animals wins.
 
 ---
 
 ## 🏗 System Architecture
 
 ### 🔹 Server
-- Manages player connections
-- Maintains waiting and active player lists
-- Validates submitted words
-- Tracks attempts per player
-- Broadcasts messages to all connected clients
-- Controls game start and winner detection
-- Handles concurrent clients using multithreading
+- Manages multiple player connections
+- Sends animal hints to all players
+- Validates submitted answers
+- Tracks scores per player
+- Broadcasts results in real time
+- Determines winner
 
 ### 🔹 Client
-- Connects to the server using TCP sockets
-- Sends player inputs (words)
-- Receives real-time updates
-- Displays game state via GUI
+- Connects to server via TCP sockets
+- Displays hint text
+- Sends guessed answers
+- Receives real-time score updates
 
 ### 🔹 GUI
-Built using Java Swing.
-
-Interface includes:
+Built using Java Swing:
 - Join Game button
-- Play button
-- Submit button
-- Display area for letters
-- Player list
+- Submit Answer button
+- Display hint text area
+- Player score panel
 - Game status messages
 
 ---
@@ -61,23 +64,21 @@ Interface includes:
 ## ⚙️ Technologies Used
 
 - Java
-- TCP Sockets (Client-Server communication)
+- TCP Sockets
 - Multithreading
 - Java Swing (GUI)
-- Java Collections Framework (ArrayList, HashMap)
+- Collections Framework
 
 ---
 
 ## 🎯 Implemented Features
 
-✔ Client-server communication using TCP  
-✔ Concurrent multi-player handling  
-✔ Join event handling  
-✔ Game start condition (minimum players)  
-✔ Word validation logic  
-✔ Attempt tracking per player  
-✔ Winner detection logic  
-✔ Broadcast system for real-time updates  
+✔ Multiplayer client-server communication  
+✔ Real-time answer validation  
+✔ Score tracking per player  
+✔ Broadcast messaging  
+✔ Concurrent connection handling  
+✔ Text-based cultural gameplay  
 
 ---
 
@@ -86,61 +87,33 @@ Interface includes:
 1. Compile the project.
 2. Run the `Server` class.
 3. Run one `Client` instance per player.
-4. Enter player name and join the game.
-5. Press “Play” to start.
-6. Submit words and compete in real time.
-
----
-
-## 📋 Game Rules
-
-- Minimum 2 players required
-- Maximum 5 players allowed
-- Each player has 3 attempts per round
-- First player to guess 5 valid words wins
-- Words must use only the provided letters
-- Letters cannot be reused more times than available
+4. Players join the session.
+5. Read the hint and submit guesses.
+6. Scores update in real time.
 
 ---
 
 ## 👩‍💻 My Contribution
 
-- Designed and implemented TCP socket communication.
-- Developed the multithreaded server to handle concurrent clients.
-- Implemented word validation and attempt tracking logic.
-- Contributed to GUI development using Java Swing.
-- Participated in testing and debugging multiplayer synchronization.
+- Designed multiplayer socket communication.
+- Implemented server-side validation logic.
+- Developed multithreaded client handling.
+- Built GUI interface using Java Swing.
+- Designed the game concept inspired by Saudi wildlife.
 
 ---
 
 ## 🧠 What I Learned
 
-- Practical implementation of client-server architecture.
-- Managing concurrent connections using multithreading.
-- Handling synchronization challenges in multiplayer systems.
-- Designing real-time communication logic.
-- Structuring small-scale distributed systems.
+- Designing culturally inspired game concepts.
+- Implementing multiplayer networking using TCP.
+- Handling concurrency using multithreading.
+- Real-time data synchronization between clients.
+- Structuring scalable client-server systems.
 
----
 
-## 🧩 Future Improvements
-
-- Real multi-device deployment over different networks
-- Scoreboard system
-- Game timer with auto-start
-- Player disconnect handling
-- Improved UI design
-- Refactoring into MVC architecture
-
----
 
 ## 📷 Screenshots
 
 
 
----
-
-## 📄 Author
-
-Hadeel Almutairi  
-IT Student – Networks & IoT Engineering  
