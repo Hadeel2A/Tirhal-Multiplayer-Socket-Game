@@ -113,25 +113,22 @@ Built using Java Swing:
 
 
 
-## 📷 Screenshots
-## 📷 Game Screenshots
 
+## 📷 Game Screenshots
 ### ▶ Start Page
-![Start Page](screenshots/start-page.jpg)
+![Start Page](screenshots/start-page.JPG)
 
 ### 👥 Players Page
-![Players Page](screenshots/players-page.jpg)
+![Players Page](screenshots/players-page.JPG)
 
 ### 📜 Game Rules
-![Game Rules](screenshots/game-rules.jpg)
+![Game Rules](screenshots/game-rules.JPG)
 
 ### ❓ Example Question
-![Example Question](screenshots/example-question.jpg)
+![Example Question](screenshots/example-question.JPG)
 
 ### ✔ Example Answer
-![Example Answer](screenshots/example-answer.jpg)
+![Example Answer](screenshots/example-answer.JPG)
 
 ### 🏁 Game End Screen
-![Game End](screenshots/game-end.jpg)
-
-
+![Game End](screenshots/game-end.JPG)
