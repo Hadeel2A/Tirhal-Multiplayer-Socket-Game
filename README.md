@@ -114,6 +114,24 @@ Built using Java Swing:
 
 
 ## 📷 Screenshots
+## 📷 Game Screenshots
 
+### ▶ Start Page
+![Start Page](screenshots/start-page.jpg)
+
+### 👥 Players Page
+![Players Page](screenshots/players-page.jpg)
+
+### 📜 Game Rules
+![Game Rules](screenshots/game-rules.jpg)
+
+### ❓ Example Question
+![Example Question](screenshots/example-question.jpg)
+
+### ✔ Example Answer
+![Example Answer](screenshots/example-answer.jpg)
+
+### 🏁 Game End Screen
+![Game End](screenshots/game-end.jpg)
 
 
